@@ -30,3 +30,23 @@ arduino-cli compile --fqbn arduino:avr:uno /tmp/Aproj --output-dir /tmp/Aproj/bu
 # or: arduino-cli compile --fqbn arduino:avr:uno /tmp/Aproj --verbose
 arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno /tmp/Aproj
 ```
+
+bash script
+-----------
+
+```
+#!/bin/bash
+
+while IFS= read -r line; do
+# valid applescript messages to Music.app include:
+#   playpause
+#   next track
+#   previous track
+osascript <<EOF
+ tell application "Music"
+   next track
+ end tell
+EOF
+echo $line
+done < /dev/cu.usbmodem21401
+```
