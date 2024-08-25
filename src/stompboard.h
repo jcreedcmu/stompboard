@@ -1,10 +1,8 @@
 int readPin = 8;
-int ledPin = 9;
 int onboardPin = 13;
 
 void setup() {
   pinMode(readPin, INPUT);
-  pinMode(ledPin, OUTPUT);
   pinMode(onboardPin, OUTPUT);
   Serial.begin(9600);
 }
