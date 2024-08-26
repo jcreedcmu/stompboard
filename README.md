@@ -96,3 +96,24 @@ Then I see
 ```
 Bus 005 Device 055: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)
 ```
+
+Arduino-keyboard
+--
+
+There are some blog posts from like 2011 where Darran Hunt is experimenting with HID firmware. Some of it exists on wayback machine.
+
+https://web.archive.org/web/20120122101210/http://hunt.net.nz/users/darran/search/?tag=hid
+
+This link
+https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/weblog/faf5e/Arduino_UNO_Keyboard_HID_part_2.html
+points to
+https://web.archive.org/web/20120301033429/http://hunt.net.nz/arduino/arduino-keyboard.tar.gz
+which does seem to exist! I struggled to find later versions.
+
+http://hunt.net.nz/sandbox/users/darran/weblog/b3029/attachments/bd341/arduino-keyboard-0.3.tar.gz
+
+Here's another thread where someone is trying to use LUFA:
+https://groups.google.com/g/lufa-support/c/TCltpzEU65A
+
+This points to
+https://github.com/NicoHood/HID
