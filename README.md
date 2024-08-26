@@ -97,8 +97,17 @@ Then I see
 Bus 005 Device 055: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)
 ```
 
+firmware
+--------
+
+In the [firmware](firmware) directory I have
+
+- Arduino-keyboard-0.3.hex from https://github.com/coopermaa/USBKeyboard/blob/master/firmware/Arduino-keyboard-0.3.hex
+- Arduino-usbserial-atmega16u2-Uno-Rev3.hex from https://github.com/arduino/ArduinoCore-avr/blob/master/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex
+- existing-usbserial.hex from the `dfu-programmer atmega16u2 dump` command above. This is what I found on my board after buying it at a yard sale.
+
 Arduino-keyboard
---
+----------------
 
 There are some blog posts from like 2011 where Darran Hunt is experimenting with HID firmware. Some of it exists on wayback machine.
 
