@@ -74,8 +74,25 @@ objcopy -I binary -O ihex existing-usbserial.bin existing-usbserial.hex
 
 In order to flash a new firmware, I did
 ```
+# put board in dfu mode
 dfu-programmer atmega16u2 erase
 dfu-programmer atmega16u2 flash ~/tmp/Arduino-usbserial-atmega16u2-Uno-Rev3.hex
 dfu-programmer atmega16u2 reset
+# plug-cycle board
 ```
 where that `.hex` file came from https://github.com/arduino/ArduinoCore-avr/blob/master/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex
+
+
+In order to flash the original firmware, I did
+```
+# put board in dfu mode
+dfu-programmer atmega16u2 erase
+dfu-programmer atmega16u2 flash existing-usbserial.hex
+dfu-programmer atmega16u2 reset
+# plug-cycle board
+```
+
+Then I see
+```
+Bus 005 Device 055: ID 2341:0043 Arduino SA Uno R3 (CDC ACM)
+```
