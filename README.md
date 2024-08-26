@@ -50,3 +50,32 @@ EOF
 echo $line
 done < /dev/cu.usbmodem21401
 ```
+
+firmware
+--------
+
+- Shorting the two pins on the 6-pin header nearest to the usb port,
+  puts the device in DFU ("device firmware update") mode
+
+When I did that I noticed a change from lsusb having
+```
+Bus 005 Device 015: ID 2a03:0043 dog hunter AG Arduino Uno Rev3
+```
+to having
+```
+Bus 005 Device 019: ID 03eb:2fef Atmel Corp. atmega16u2 DFU bootloader
+```
+
+In order to save whatever firmware was on the device when I got it, I did
+```
+dfu-programmer atmega16u2 dump > existing-usbserial.bin
+objcopy -I binary -O ihex existing-usbserial.bin existing-usbserial.hex
+```
+
+In order to flash a new firmware, I did
+```
+dfu-programmer atmega16u2 erase
+dfu-programmer atmega16u2 flash ~/tmp/Arduino-usbserial-atmega16u2-Uno-Rev3.hex
+dfu-programmer atmega16u2 reset
+```
+where that `.hex` file came from https://github.com/arduino/ArduinoCore-avr/blob/master/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex
