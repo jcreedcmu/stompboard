@@ -1,0 +1,211 @@
+/* Compressed file. Do not modify. */
+
+
+html,body{margin:0;padding:0;font-family:"Lucida Grande",LucidaGrande,Lucida,"Helvetica Neue",helvetica,arial,sans-serif;color:#333;background:#dadada url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/bg_body.gif) 0 0 repeat-x;}
+.editorIframe,.editorIframe body{background:#fff;}
+form{display:block;margin:0;}
+table,th,td{font-size:1em;}
+a:link{text-decoration:none;color:#125bcf;}
+a:visited{text-decoration:none;color:#636;}
+a:link:hover,a:visited:hover,a:link:active,a:visited:active,a:focus{text-decoration:underline;}
+h1,h2,h3,h4,h5,h6{margin:0.3em 0 0.2em;padding:0;color:#4d4d4d;font-weight:500;}
+p{margin:0.1em 0 0.7em;padding:0;}
+pre{margin:0.1em 0 0.7em;padding:0;overflow:auto;font-family:courier,monospace;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+ol ol{list-style:lower-alpha;}
+ol ol ol{list-style:decimal;}
+ol ol ol ol{list-style:lower-alpha;}
+ol ol ol ol ol{list-style:decimal;}
+.custom_color_none{color:#333333;}
+.custom_bold{font-weight:bold;}
+.custom_italic{font-style:italic;}
+.custom_underline{text-decoration:underline;}
+.custom_forecolor_important{color:#ff0000;font-weight:bold;}
+.custom_forecolor_emphasis{color:#000099;}
+.custom_backcolor_highlight{background-color:#eceea8;}
+html,body{font-size:100%;}
+.body{font-size:0.76em;margin:0;padding:0;text-align:center;}
+.contentsheader,.main,.contentsfooter{text-align:left;width:900px;min-width:40em;margin:0 auto;padding:0;}
+.pagecontent{margin:0;padding:15px 36px 30px;overflow:hidden;text-overflow:ellipsis;word-wrap:break-word;border:solid 2px #a9a9a9;border-radius:10px;-o-border-radius:10px;-ie-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;color:#333;background-color:#fff;}
+html.editorIframe,.editorIframe body{text-align:left;margin:0;padding:0;}
+.editorIframe body{font-size:0.76em;}
+.main{padding-bottom:1.2em;}
+.contentsmain{position:relative;}
+#editable_content,#editable_raw_html{margin:0;padding:0;}
+#editable_raw_html{display:block;width:100%;font-family:Monaco,monospace;font-size:1em;}
+.columnprimary a:link,.columnprimary a:visited{text-decoration:underline;}
+.header{color:#fff;background:#3772bc url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/bg_header.gif) 0 0 repeat-x;margin:0;padding:10px 0 4px;border-bottom:solid 2px #214471;min-width:900px;}
+.header a:link,.header a:visited{color:#fff;text-decoration:none;}
+.mainnav{clear:both;float:none;}
+.mainnav:after{clear:both;content:"";display:block;height:0;overflow:hidden;visibility:hidden;}
+* html .mainnav{height:1px;}
+#group_title{position:relative;top:0;left:38px;color:inherit;display:block;font-size:2.3em;float:left;margin:0;padding:8px 0.5em 0 0;font-weight:bold;}
+#group_title .icon{position:absolute;top:50%;left:-38px;margin-top:-9px;width:28px;height:28px;}
+#group_title .icon img{width:28px;height:28px;}
+.webapptoolbar{font-size:1em;display:block;float:right;list-style-type:none;margin:0 -0.5em 0 0;padding:20px 0 5px;z-index:2;}
+#linkWik,#linkBlo,#linkCal,#linkML,#linkSearch{display:block;float:left;list-style-type:none;padding:0;margin:0;}
+.webapptoolbar a{font-size:1.3em;border-radius:0.5em;-o-border-radius:0.5em;-ie-border-radius:0.5em;-moz-border-radius:0.5em;-webkit-border-radius:0.5em;margin:0 0 0 0.2em;padding:0.2em 0.5em;}
+.webapptoolbar a.selected,.webapptoolbar a:hover,.webapptoolbar a:active,.webapptoolbar a:focus{background-color:#7ba1d2;}
+#group_title .icon.default{background-position:-52px 0 !important;}
+.users #group_title .icon.default{background-position:0 0 !important;}
+.icon img{mask-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/corners28x28.png) !important;-o-mask-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/corners28x28.png) !important;-ie-mask-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/corners28x28.png) !important;-moz-mask-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/corners28x28.png) !important;-webkit-mask-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/corners28x28.png) !important;}
+.historycontainer{margin-right:-35px;}
+div.splitter{margin-left:-37px;margin-right:-37px;}
+#history_link{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.png) !important;}
+* html #history_link{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.gif) !important;}
+.footer{margin:10px 0;padding:0;font-size:0.9em;}
+.footer a:link,.footer a:visited{color:#666;}
+.contentsfooter{text-align:center;}
+.footerlinks li{border-color:#999 !important;}
+.entry{border-top:solid 1px #dedede;padding-top:0.6em;margin-bottom:0.8em;}
+.entry:after{clear:both;content:"";display:block;height:0;overflow:hidden;visibility:hidden;}
+* html .entry{height:1px;}
+.metadata{padding:10px 0 0;}
+.entry_title{font-size:1.3em;padding:0;margin:0 0 3px 0;}
+.entry_title a:link,.entry_title a:visited{text-decoration:none;}
+div.summary p{margin:0.4em 0 0.2em 41px;font-size:0.9em;}
+p.entry_listing_comments{font-size:0.8em;margin:0.1em 0;float:right;}
+#document_title{font-size:2em;}
+#document_title_field{width:450px;font-size:1em;border:solid 1px #ccc;}
+#save_page_comment{padding-left:0.3em;border-radius:0.7em;-o-border-radius:0.7em;-ie-border-radius:0.7em;-moz-border-radius:0.7em;-webkit-border-radius:0.7em;}
+#history_time_author{color:#999;}
+#history_time_author a:link,#history_time_author a:visited{color:#999;}
+.sidebar .module ul{margin:0 0 1em;padding:0;}
+.sidebar .module li{display:block;list-style:none;margin:0;padding:2px 0 0;}
+.sidebar .module a:link,.sidebar .module a:visited{margin-top:1px;display:block;line-height:1.2;}
+* html .sidebar .module a:link,* html .sidebar .module a:visited{height:1em;}
+.grouphome .snippet{font-size:0.9em;display:block;padding-bottom:4px;padding-top:2px;}
+#content_extras_column{color:#666;background-color:#f9f9f9;border:solid 1px #b2b2b2;border-radius:6px;-o-border-radius:6px;-ie-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;margin:0;padding:10px 20px;}
+.sidebar .module h3,.sidebar .module h2{position:relative;color:#666;border-bottom:solid 1px #bebebe;margin:0.5em 0 0.3em;padding:0 0 0.1em;font-size:1.3em;font-weight:bold;}
+.sidebar .module ul{margin:0.3em 0 1em;padding:0;}
+.sidebar .module li{display:block;list-style:none;margin:0 0 0.2em;}
+.sidebar h3 a:link,.sidebar h3 a:visited{color:#666;text-decoration:none;display:block;}
+* html .sidebar h3 a:link,* html .sidebar h3 a:visited{height:12px;}
+.sidebarHeaderFeed{position:absolute;top:0;right:0;display:block;width:12px;height:12px;text-indent:-9999px;overflow:hidden;background:transparent url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/rss.png) 0 0 no-repeat;}
+* html .sidebarHeaderFeed{right:20px;}
+div.paginator ul{border-width:2px !important;border-radius:10px !important;-webkit-border-radius:10px !important;background-image:none !important;border-color:#ccc !important;}
+div.paginator a,div.paginator a:link,div.paginator a:visited{color:#666 !important;text-shadow:none !important;}
+.paginator li.middle,.paginator .calendar_nav_view_picker .last{border-color:#ccc !important;}
+div.paginator ul:hover{border-color:#999 !important;}
+.paginator li.middle{border-width:0 2px !important;}
+.paginator_choose,.paginator_up{border:0 !important;}
+.paginator .paginator_prev,.paginator .paginator_next{border:0 !important;width:20px !important;}
+.paginator .paginator_prev{background-position:1px 50% !important;}
+.paginator .paginator_next{background-position:-61px 50% !important;}
+.paginator .first .disabled{background-position:-19px 50% !important;}
+.paginator .last .disabled{background-position:-41px 50% !important;}
+.popup{border-width:2px !important;}
+.tags{height:1.6em;padding:0.8em 37px 0.8em;}
+html>body .tags{height:auto;min-height:1.6em;}
+.tags h3{display:block;float:left;margin:0;padding:0.1em 0.15em 0 0.15em;}
+.taglist a:link,.taglist a:visited{color:#125bcf;margin:0;padding:0.1em 0.2em 0.1em 0.3em;}
+.taglist a:after{content:',';color:#666;}
+.taglist li:last-child a:after{display:none;}
+.taglist li{max-height:1.2em;overflow:hidden;}
+.tags input.text{float:left;padding-left:0.3em;border:solid 1px #999;border-radius:0.7em;-o-border-radius:0.7em;-ie-border-radius:0.7em;-moz-border-radius:0.7em;-webkit-border-radius:0.7em;}
+a.next_tag_expander{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.png) !important;}
+* html a.next_tag_expander{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.gif) !important;}
+.toolbar{margin-top:1.6em;margin-bottom:2em;}
+.tbtoolbar{color:#333;background:#e5e5e5 url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/bg_toolbar.gif) 0 50% repeat-x;border:solid 2px #bbb;border-radius:15px;-o-border-radius:15px;-ie-border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;margin:0;}
+#add_button{border-style:solid;border-color:#ccc;border-color:transparent;border-width:0 1px;}
+* html #add_button{border-color:#ccc;}
+.tbtoolbar:hover,.edit_toolbar .tbtoolbar,.dialog .tbtoolbar,.tbtoolbar:hover #add_button{border-color:#808080;}
+.tbtoolbar input{padding-left:0.3em;margin-left:5px !important;border-top-left-radius:10px 9px;border-bottom-left-radius:10px 9px;-o-border-radius:10px 9px;-ie-border-radius:10px 9px;-moz-border-radius:10px 9px;-webkit-border-top-left-radius:10px 9px;-webkit-border-bottom-left-radius:10px 9px;}
+.tbbuttons li a{width:34px !important;height:30px !important;border:solid 0 #bbb;}
+.tbbuttons li.enabled a:hover,.tbbuttons li.enabled a:active,.tbbuttons li.enabled a:focus,.tbbuttons li.active a:link,.tbbuttons li.active a:visited{border-color:#808080;width:32px !important;border-width:0 1px;}
+.tbbuttons li.active a:link,.tbbuttons li.active a:visited{background-color:rgba(0,0,0,0.1);}
+.tbactions a:link,.tbactions a:visited{color:#444;border:solid 0 #808080;}
+.tbactions a:hover,.tbactions a:active,.tbactions a:focus{border-color:#808080;padding-left:9px !important;padding-right:9px !important;border-width:0 1px;}
+#done_button a,#tableDialogDelete{padding-right:10px !important;border-right:0 !important;}
+#edit_button a,#add_button a,#remove_button a{border-width:0 !important;width:33px !important;}
+#edit_button a{background-position:1px 0 !important;width:32px !important;margin-left:2px;}
+#add_button a{background-position:2px -30px !important;}
+#remove_button a{background-position:2px -60px !important;}
+span.forecolor_example_container{background-color:#fff;display:block;float:left;margin-right:3px;}
+span.forecolor_example{display:block;width:12px;height:12px;float:left;font-size:10px;border:1px solid #dcdcdc;text-align:center;}
+#linkSearch{}
+#linkSearch #search_field{border-color:rgba(255,255,255,0.4) !important;}
+#linkSearch .linkSearchPopup{color:#fff !important;background-color:#3772bc !important;border-color:#214471 !important;border-width:0 1px 1px !important;-moz-border-radius-bottomleft:1.2em;-moz-border-radius-bottomright:1.2em;-webkit-border-bottom-left-radius:1.2em;-webkit-border-bottom-right-radius:1.2em;}
+.search_popup_results{border-radius:0.8em;-o-border-radius:0.8em;-ie-border-radius:0.8em;-moz-border-radius:0.8em;-webkit-border-radius:0.8em;}
+.header .linkSearchPopup a:link,.header .linkSearchPopup a:visited,.search_popup_results td{border-radius:0.4em;-o-border-radius:0.4em;-ie-border-radius:0.4em;-moz-border-radius:0.4em;-webkit-border-radius:0.4em;}
+#search_toolbar ul{font-size:1.0em;list-style-type:none;line-height:1.75;margin:0;padding:0;}
+#search_toolbar li{list-style-type:none;margin:0;padding:0;}
+#search_toolbar li a{display:inline;padding:0.4em 0.75em 0.3em;text-decoration:none !important;color:#666;border-radius:0.75em;-o-border-radius:0.75em;-ie-border-radius:0.75em;-moz-border-radius:0.75em;-webkit-border-radius:0.75em;}
+#search_toolbar li a:hover{color:#333;}
+#search_toolbar li.active a{color:#fff;background:#949494;}
+#search_selected_tags a:link,#search_selected_tags a:visited{text-decoration:none;}
+#search_selected_tags a:link:hover,#search_selected_tags a:visited:hover,#search_selected_tags a:active,#search_selected_tags a:focus{text-decoration:underline;}
+.search #entries_list .entry-title a{color:#666;}
+.search .columns{position:relative !important;}
+.search .columnprimary{margin-bottom:40px !important;overflow:visible !important;position:static !important;}
+.search .listbar{width:550px !important;bottom:0;left:0;position:absolute !important;}
+.allSettings .toolbar{border-radius:9px;-o-border-radius:9px;-ie-border-radius:9px;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius-bottomleft:0;border-radius-bottomright:0;border-bottom-left-radius:0;border-bottom-right-radius:0;-moz-border-radius-bottomleft:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-left-radius:0;-webkit-border-bottom-right-radius:0;}
+.allSettings .columnprimary{border-radius-bottomleft:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;}
+.calendar .pagecontent{padding:0;}
+.calendar_nav_footer{background:#eef1f4;}
+.calendar_nav_footer a:link,.calendar_nav_footer a:visited{color:#7f7f7f;}
+.calendar_appointment{background:#c9e4ff;}
+.calendar_month_view li.month_view_appointment{color:#742b25;}
+table.data{clear:both;color:#666;background-color:transparent;border-spacing:0;border-collapse:collapse;font-size:1em;border-style:solid;border-width:0 1px 1px 0;border-color:#ddd;width:99.5%;margin:1px;padding:0;}
+.data th,.data td{font-size:1em;font-weight:normal;border-style:solid;border-width:1px 0 0 1px;border-color:#ddd;color:#333;background-color:transparent;text-align:left;vertical-align:top;margin:0;padding:2px 4px 3px;}
+.data th{background-color:#eee;}
+.showcommentformlink:link,.showcommentformlink:visited{color:inherit;text-decoration:none;}
+.showcommentformlink:hover,.showcommentformlink:active,.showcommentformlink:focus{text-decoration:underline;}
+.comments{margin-top:3em;}
+.comment{position:relative;margin:9px 0 0;padding:0;border:solid 1px #ccc;}
+.comment h4{position:relative;font-size:1em;min-height:1em;margin:0 0 0.2em 0;padding:3px 7px 4px;border-bottom:solid 1px #ccc;background-color:#eee;}
+.comment h4:after{clear:both;content:"";display:block;height:0;overflow:hidden;visibility:hidden;}
+* html .comment h4{height:1px;}
+.comment span.icon{position:absolute;display:block;height:36px;width:36px;bottom:-42px;left:7px;}
+.comment .icon .mask{background-position:0 -28px;}
+.comment .author{float:left;}
+.comment .datetime{float:right;font-size:0.9em;padding-right:20px;background:transparent url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/comment.png) 100% 50% no-repeat;min-height:15px;}
+.commentbody{min-height:32px;padding:7px;}
+.comment p{margin:0 0 0.8em 40px;}
+.comments form,.showcomments{display:block;margin:1em 0 0;padding:0.5em 0 0;border-top:solid 1px #cccc;}
+.comments form .submit{}
+.comments label,.comments .label{display:block;margin:0.6em 0 0.2em;}
+.comments input.text,.comments textarea{border:solid 1px #999;font-size:1em;font-family:inherit;width:99.9%;}
+.showcommentformlink .icon{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.png) !important;}
+* html .showcommentformlink .icon{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.gif) !important;}
+.deletecomment{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.png) !important;}
+* html .deletecomment{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.gif) !important;}
+.inline_delete_button{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.png) !important;}
+* html .inline_delete_button{background-image:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/themes/horizon.blue/screen/img/controls.gif) !important;}
+h1 a.toc_anchor,h2 a.toc_anchor,h3 a.toc_anchor,h4 a.toc_anchor,h5 a.toc_anchor,h6 a.toc_anchor{color:#676767;}
+h1 a.toc_anchor:hover,h2 a.toc_anchor:hover,h3 a.toc_anchor:hover,h4 a.toc_anchor:hover,h5 a.toc_anchor:hover,h6 a.toc_anchor:hover{text-decoration:none;color:#676767;}
+.toc{border-bottom:2px inset #efefef;}
+.toc ul{padding-left:16px;list-style:none;font-size:1em;line-height:1.2;}
+table.thumbnail{border:solid 1px #929292;color:#777777;font-size:10px;}
+.thumbnail img{cursor:pointer;}
+div.fullsize_link{float:right;width:15px;height:11px;background:url(/web/20130207073116im_/http://hunt.net.nz/collaboration/images/magnify-clip.png) no-repeat;display:inline;cursor:pointer;}
+img.fullsize{position:absolute;z-index:504;background-color:#fff;border:solid 1px #929292;padding:4px;cursor:pointer;}
+body.weblogEntries div.summary p{margin-left:0;}
+body.personalWeblogEntries .columnprimary{padding:10px 0;width:67%;float:left;}
+body.personalWeblogEntries .columnsecondary{display:block;padding:10px 0;width:30%;float:right;}
+body.weblogEntry #save_page_comment_container{display:none;}
+.mainnav .icon{display:none !important;}
+.webapptoolbar{position:relative;right:35px;}
+
+
+/*
+     FILE ARCHIVED ON 07:31:16 Feb 07, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:28:33 Aug 26, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.812
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.029
+  esindex: 0.021
+  cdx.remote: 25.842
+  LoadShardBlock: 3262.739 (3)
+  PetaboxLoader3.resolve: 1879.631 (3)
+  PetaboxLoader3.datanode: 1278.207 (4)
+  load_resource: 863.183
+*/

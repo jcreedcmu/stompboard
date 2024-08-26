@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head><script type="text/javascript" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://hunt.net.nz/users/darran/weblog/faf5e/Arduino_UNO_Keyboard_HID_part_2.html","20120301033429","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1330572869");
+</script>
+<link rel="stylesheet" type="text/css" href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Mac OS X Server Web Services Server 247">
+<meta name="apple_required_ui_revision" content="WikiServerUI-201">
+<meta name="apple_collab_uid" content="users/darran/weblog/faf5e">
+<meta name="apple_supported_quicklook_extensions" content="bmp,doc,docx,gif,html,icns,ics,jpeg,jpg,jp2,key,mov,mpeg,mpg,mp3,mp4,m4a,m4p,m4v,3gp,numbers,pages,pdf,png,ppt,pptx,psd,rtf,tif,tiff,txt,xhtml,xls,xlsx">
+<meta name="apple_allowComments" content="True">
+<meta name="apple_allowUnauthenticatedComments" content="True">
+<meta name="apple_allowUnmoderatedComments" content="True">
+<meta name="apple_allowUnmoderatedUnauthenticatedComments" content="True">
+<meta name="apple_iconURI" content="/collaboration/images/blog.png">
+<meta name="apple_siteDisplayName" content="Arduino Hacking">
+<meta name="viewport" content="width=1024, user-scalable=yes, minimum-scale=0.25, maximum-scale=1.5">
+<meta name="tzid" content="Pacific/Auckland">
+<meta name="apple_collab_comment_sort_direction" content="ASC">
+<meta name="apple_collab_comment_uid" content="users/darran/discussion/faf5e">
+<meta name="apple_collab_modified_date" content="2011-03-22T06:38:31+00:00">
+<title>Arduino UNO Keyboard HID part 2</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/weblog/index.rss"><link rel="stylesheet" type="text/css" media="print" href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/print.css" title="com.apple.horizon.blue">
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/screen.css" title="com.apple.horizon.blue"><link rel="stylesheet" type="text/css" media="screen, projection" href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/required_compressed.css">
+
+
+	<link rel="stylesheet" type="text/css"  href="Arduino%20UNO%20Keyboard%20HID%20part%202_files/screen_compressed.css">
+
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://web.archive.org/users/darran/rsd.xml">
+<link rel="shortcut icon" href="https://web.archive.org/web/20120301033429im_/http://hunt.net.nz/favicon.ico">
+</head>
+<body id="wikid" class="unauthenticated users weblogEntry personalWeblogEntry">
+<div class="body">
+<div class="start startbody"><span></span></div>
+<div class="contents contentsbody">
+<div class="header" id="page_header">
+<div class="start startheader"><span></span></div>
+<div class="contents contentsheader"><div class="mainnav">
+<a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/" id="group_title"><span class="icon default"><img alt="" width="44" height="44" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/blog.png"><span class="mask"></span></span>Arduino Hacking</a><ul class="webapptoolbar" id="webapptoolbar">
+<li id="linkBlo"><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/blog/" class="selected">blog</a></li>
+<li id="linkSearch" class="linkSearch">
+<form action="/web/20120301033429/http://hunt.net.nz/users/darran/search/" method="get"><div class="form">
+<input type="search" name="q" id="search_field" title="Search" placeholder="Search" autosave="users/darran" results="10" autocomplete="off"><input type="hidden" id="no_results_str" value="No entries.">
+</div></form>
+<div id="linkSearchPopup" class="linkSearchPopup popup" style="display:none"><h2>Recent Tags</h2><div class="search_popup_results"><ul id="quick_search_field_results" style="display:none"><li><a href="#" onclick="function invalidate(){return false;}" class="search_placeholder busy_field">Searching…</a></li></ul><ul><li><a href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/search/arduino?sort=modifiedDate&amp;howMany=10&amp;sortDirection=reverse&amp;tag=arduino">arduino</a></li><li><a href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/search/hid?sort=modifiedDate&amp;howMany=10&amp;sortDirection=reverse&amp;tag=hid">hid</a></li><li><a href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/search/keyboard?sort=modifiedDate&amp;howMany=10&amp;sortDirection=reverse&amp;tag=keyboard">keyboard</a></li><li class="linkPopupSplitter"></li><li class="search_all_tags_item"><a href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/tags/">all tags…</a></li><li class="search_all_recents_item"><a href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/search/" class="tagsRecentsItem">recent changes…</a></li></ul></div></div>
+</li>
+</ul>
+</div></div>
+<div class="end endheader"><span></span></div>
+</div>
+<div class="main">
+<div class="start startmain"><span></span></div>
+<div class="contents contentsmain">
+<div class="bannertags">
+<div class="banner">
+<div class="start startbanner"><span></span></div>
+<div class="contents contentsbanner"></div>
+<div class="end endbanner"><span></span></div>
+</div>
+<div class="tags" id="apple_collab_tags"><h3>Tags</h3><ul class="taglist"><li><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/search/?tag=arduino" title="Click this tag to search for other items with this tag. Drag the tag from the tag bar to delete it.">arduino</a></li><li><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/search/?tag=hid" title="Click this tag to search for other items with this tag. Drag the tag from the tag bar to delete it.">hid</a></li><li><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/search/?tag=keyboard" title="Click this tag to search for other items with this tag. Drag the tag from the tag bar to delete it.">keyboard</a></li></ul><a href="#" class="next_tag_expander" role="button">Add Tags Here</a><input id="next_tag" title="Add Tags Here" type="text" class="text next_tag hinted" style="display:none" maxlength="70" value="Add Tags Here"></div>
+</div>
+<div class="pagecontent" id="page_body">
+<div class="metadata" id="entry_metadata">
+<div class="start startmetadata"><span></span></div>
+<div class="contents contentsmetadata"><div id="entry_date" class="entry_date">
+<a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/revisions/faf5e/index.html" id="history_link" title="View Document History" onclick="return false" role="button">History</a><span id="history_time_author">Edited  Mar 22, 2011 7:38 PM  by  <a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/search/?q=darran&amp;fields=lastModifiedAuthor">darran</a>…</span>
+</div><div id="history_mode" class="history" style="display:none"><div class="start starthistory"><span></span></div><div id="history_view" class="contents contentshistory"><div id="historycontainer" class="historycontainer" style="height:75px;"><ul id="history_list"></ul></div><div class="splitter"><div class="splitter_handle"></div></div><div class="historycontrols"><ul id="historycontrolslist"><li><a id="history_revert" title="Restore displayed version.">Restore</a></li><li><a href="#compare" id="history_compare" title="Compare this to the previous version.">Compare</a></li></ul></div></div><div class="end endhistory"><span></span></div></div></div>
+<div class="end endmetadata"><span></span></div>
+</div>
+<div class="toolbar">
+<div class="favorite-icon" name="users/darran/weblog/faf5e" title="Mark this page as a favorite." role="button"></div>
+<div id="page_toolbar"><div id="toolbars" class="toolbars" style=""><div class="main_toolbar" role="toolbar"><div class="tbtoolbar"><div class="start starttoolbar"><span></span></div><div class="contents contentstoolbar"><ul class="tbbuttons" role="presentation"><li id="edit_button" class="enabled" role="presentation"><a href="#" role="button" title="Edit this page" aria-disabled="" style="opacity: 0.99999;">Edit this page</a></li><li id="add_button" class="enabled" role="presentation"><a href="#" role="button" title="Create a new page" aria-disabled="" style="opacity: 0.99999;">Create a new page</a></li><li id="remove_button" class="enabled" role="presentation"><a href="#" role="button" title="Delete this page" aria-disabled="" style="opacity: 0.99999;">Delete this page</a></li></ul></div><div class="end endtoolbar"><span></span></div></div></div><div class="edit_toolbar" role="toolbar" style="display: none;"><div class="tbtoolbar"><div class="start starttoolbar"><span></span></div><div class="contents contentstoolbar"><form><div class="form"><input type="text" id="editing_document_title" title="Document Title" maxlength="255"></div></form><ul class="tbbuttons" role="presentation"><li id="header_button" class="enabled" role="presentation"><a href="#" role="button" title="Choose a paragraph style">Block Style</a></li><li id="lists_button" class="enabled" role="presentation"><a href="#" role="button" title="Choose a list style">Lists</a></li><li id="forecolor_button" class="enabled" role="presentation"><a href="#" role="button" title="Choose a text style" id="forecolor_link">S</a></li><li id="createlink_button" class="enabled" role="presentation"><a href="#" role="button" title="Create or edit a link">Link</a></li></ul><ul class="tbbuttons" role="presentation"><li id="image_button" class="enabled" role="presentation"><a href="#" role="button" title="Insert images, audio, or QuickTime movies">Insert image</a></li><li id="attach_button" class="enabled" role="presentation"><a href="#" role="button" title="Attach a file">Attach file</a></li><li id="table_button" class="enabled" role="presentation"><a href="#" role="button" title="Insert a table">Insert table</a></li><li id="html_button" class="enabled" role="presentation"><a href="#" role="button" title="Edit HTML">Edit HTML</a></li></ul><ul class="tbactions" role="presentation"><li id="done_button" class="enabled" role="presentation"><a href="#" role="button" title="Save changes">Save</a></li><li id="cancel_button" class="enabled" role="presentation"><a href="#" role="button" title="Revert to saved version">Cancel</a></li></ul></div><div class="end endtoolbar"><span></span></div></div></div></div><h1 id="document_title">Arduino UNO Keyboard HID part 2</h1></div>
+</div>
+<div id="wysiwyg_container"><div class="columns">
+<div class="column columnprimary">
+<div class="maincontent"><div id="editable_content">
+<div class="wiki_entry">Part 1 covered getting the avr tools setup and
+building the Arduino usbserial firmware. Part 2 covers flashing the
+firmware to the UNO's atmega8u2 and putting together firmware for a
+Keyboard HID driver.</div>
+<div class="wiki_entry"><br class=""></div>
+<h2>Updating the UNO's atmega8u2 USB firmware<br class=""></h2>
+<div>To do this the atmega8u2 needs to be put into DFU mode. There is a
+description of how to do this without soldering on the Arduino forums
+here: <a href="https://web.archive.org/web/20120301033429/http://arduino.cc/forum/index.php/topic,52447.msg374201.html#msg374201">msg374201</a>.
+ Note that you can't brick your UNO doing this, it will always support
+DFU mode so you can recover by flashing it with a working
+Arduino-usbserial.hex file.</div>
+<div>
+ <ul>
+
+  <li>Put the UNO into DFU mode.</li>
+
+  <li>dfu-prgrammer at90usb82 erase</li>
+
+  <li>dfu-programmer at90usb82 flash --debug 1 Arduino-usbserial.hex</li>
+
+  <li>dfu-programmer at90usb82 reset</li>
+
+  <li>Unplug the UNO's USB cable for a few seconds and plug it back in</li>
+
+  <li>Check that you can still upload a sketch. If you can't upload the
+sketch (e.g. the usb device hasn't shown up), then put the UNO back into
+ DFU mode and repeat the above procedure using the prebuilt
+Arduino-usbserial-uno.hex file that is in the Arduino-usbserial
+directory.</li>
+
+ </ul>
+ <div>Note you can also flash the firmware by running "make dfu" in the
+arduino-usbserial directory after you put the UNO into DFU mode.</div>
+ <h2>Creating Keyboard HID firmware</h2>
+ <div>This has been made extremely easy by the excellent work done by Dean Camera with his AVR USB stack <a href="https://web.archive.org/web/20120301033429/http://www.fourwalledcubicle.com/LUFA.php">LUFA</a>
+ and the excellent demo's he provides which are full drivers for a large
+ collection of USB devices. And, of course, the efforts of the Arduino
+team and contributors that have made it such an easy platform to develop
+ on.</div>
+ <div><br class=""></div>
+ <div>I put together the Keyboard HID firmware by starting with the
+Arduino-usbserial source code, adding in the LUFA keyboard HID demo
+code, and implementing a simple serial protocol to allow communication
+with the keyboard firmware from the UNO's main processor.</div>
+ <div><br class=""></div>
+ <div>The source code is in the following locations:</div>
+ <div>
+  <ul>
+
+   <li>Arduino/hardware/arduino/firmwares/arduino-usbserial</li>
+
+   <li>LUFA 100807/Demos/Device/ClassDriver/Keyboard</li>
+
+  </ul>
+  <div>I've defined a very simple serial protocol between the keyboard
+firmware and the UNO's main processor. The keyboard firmware expects to
+receive 8 bytes formatted as a Keyboard HID report. The format is as
+follows:</div></div>
+ <div><br class=""></div>
+ <div>
+  <table class="data __useTableEditor"><thead>
+    <tr>
+
+     <th>Byte</th>
+
+     <th>Contents</th>
+
+    </tr></thead> <tbody>
+    <tr>
+
+     <th>0</th>
+
+     <td>Modifier keys:<br class=""> Bit 0 - Left CTRL<br class=""> Bit 1 - Left SHIFT<br class=""> Bit 2 - Left ALT<br class=""> Bit 3 - Left GUI<br class=""> Bit 4 - Right CTRL<br class=""> Bit 5 - Right SHIFT<br class=""> Bit 6 - Right ALT<br class=""> Bit 7 - Right GUI</td>
+
+    </tr>
+    <tr>
+
+     <th>1</th>
+
+     <td>Not used</td>
+
+    </tr>
+    <tr>
+
+     <th>2 - 7</th>
+
+     <td>HID active key usage codes. This represents up to 6 keys currently being pressed.</td>
+
+    </tr></tbody></table></div>
+ <div><br class=""></div>
+ <div>The Key Usage codes are documented in chapter 10 of the <a href="https://web.archive.org/web/20120301033429/http://www.usb.org/developers/devclass_docs/Hut1_11.pdf">HID Usage Tables</a>.
+ The letters 'a' to 'z' are codes 4 to 29, and you can indicate upper
+case by setting the left SHIFT or right SHIFT bit in byte 0 of the
+report.</div>
+ <div><br class=""></div>
+ <div>The keyboard firmware sends back 1 byte every time it receives 8
+bytes. This byte represents the LED status for the keyboard: Bit 0 -
+NUMLOCK, Bit 1 - CAPSLOCK, Bit 2 SCROLL LOCK. Note this isn't currently
+working and I haven't worked out why yet. I'll update the page when its
+fixed.</div>
+ <div><br class=""></div>
+ <div>Example code to send an 'a':</div></div>
+<div><br class=""></div>
+<blockquote class="webkit-indent-blockquote">
+ <div>
+  <div>uint8_t keyNone[8] = { 0, 0, 0, 0, 0, 0, 0 };</div></div>
+ <div>uint8_t keyA[8] = { 0, 0, 4, 0, 0, 0, 0 };</div>
+ <div><br class=""></div>
+ <div>void setup() </div>
+ <div>{</div></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>Serial.begin(9600);</div>
+  <div>delay(2000);</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <div>}</div>
+ <div><br class=""></div>
+ <div>void loop()</div>
+ <div>{</div></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>uint8_t ledStatus;</div>
+  <div><br class=""></div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>/* Send an 'a' every second */</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>Serial.write(keyA, 8);</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>ledStatus = Serial.read();</div>
+  <div>delay(100); // Give the host time to read the key</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>Serial.write(keyNone, 8);</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <blockquote class="webkit-indent-blockquote">
+  <div>delay(1000);</div></blockquote></blockquote>
+<blockquote class="webkit-indent-blockquote">
+ <div>}</div> </blockquote>
+<div>There is plenty of room for improvement in the keyboard firmware.
+I'll work on a version that doesn't need the delay(100) to give the host
+ time to read the key. There is some difficulty because of the size of
+the firmware - its 4040 bytes which is almost at the 4096 byte limit
+which makes it challenging to add features.</div><br class="">
+<div>
+ <div>You can download the Keyboard HID firmware source here: <a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/arduino/arduino-keyboard.tar.gz">arduino-keyboard.tar.gz</a> and the firmware here: <a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/arduino/Arduino-keyboard.hex">Arduino-keyboard.hex</a></div>
+ <div><br class=""></div>
+ <div><a class="attachment" href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/weblog/faf5e/attachments/2b5e5/arduino-keyboard.tar.gz"><img src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/arduino-keyboard.tar.gz.html" alt="Download file &quot;arduino-keyboard.tar.gz&quot;" longdesc="/users/darran/weblog/faf5e/attachments/2b5e5/arduino-keyboard.tar.gz" class="attachment_handle_img" title="Download file &quot;arduino-keyboard.tar.gz&quot;"></a><br class=""></div>
+ <div><a class="attachment" href="https://web.archive.org/web/20120301033429mp_/http://hunt.net.nz/users/darran/weblog/faf5e/attachments/b0717/Arduino-keyboard.hex"><img src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/Arduino-keyboard.hex.html" alt="Download file &quot;Arduino-keyboard.hex&quot;" longdesc="/users/darran/weblog/faf5e/attachments/b0717/Arduino-keyboard.hex" class="attachment_handle_img" title="Download file &quot;Arduino-keyboard.hex&quot;"></a><br class=""></div></div></div></div>
+<div id="paginator" class="paginator"><ul>
+<li class="first"><a id="paginator_prev" class="paginator_prev" href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/weblog/13a32/" title="Previous">←</a></li>
+<li class="middle"><a id="paginator_up" class="paginator_up" href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/weblog/" title="Back to List">↑</a></li>
+<li class="last"><a id="paginator_next" class="paginator_next" href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/users/darran/weblog/a6d52/" title="Next">→</a></li>
+</ul></div>
+<div id="comments" class="comments">
+<h3 id="commentsheader"><span class="label">Comments</span></h3>
+<div id="commentslist">
+<div class="comment" id="comment_users_darran_discussion_faf5e_759ca">
+<h4>
+<span class="author" title="hads@nicegear.co.nz (unauthenticated)"><span class="name">hads@nicegear.co.nz (unauthenticated)</span><span class="icon"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/unauthenticated.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Mar 22, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>Great write up Darran, thanks for sharing.</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_c77ec">
+<h4>
+<span class="author" title="Lizardbones (lizardbones@gmail(dot)com) (unauthenticated)"><span class="name">Lizardbones (lizardbones@gmail(dot)com) (unauthenticated)</span><span class="icon"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/unauthenticated.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Mar 26, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>First - good on yer, mate! I
+ know from my own internet searches that many people have been waiting
+and looking for something to turn the Uno into a pseudo keyboard without
+ having to buy a U-HID device.</p><p>Now for the superfluous question.  I
+ really can't think of a reason why you'd need more than 6 keys pressed
+at a time (especially since modifier keys are handled with a separate
+byte), but would it be possible to maintain 2 sets of Keyboard HID
+reports and juggle between them to have more than 6 keys pressed at the
+same time?</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_68d1f">
+<h4>
+<span class="author" title="darran"><span class="name">darran</span><span class="icon default"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/user.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Mar 26, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>I don't think that will
+work - it would appear to the host that two separate sets of 6 keys
+where being pressed and released in rapid succession. It might be
+possible to define a larger keyboard report message that could carry
+more keys but I'm not sure how the host driver would react to that.
+Something to experiment with.<br></p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_78be7">
+<h4>
+<span class="author" title="Seán (unauthenticated)"><span class="name">Seán (unauthenticated)</span><span class="icon"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/unauthenticated.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Apr 4, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>Superb post, massively
+helped with problems in my project. Just curious, what would the
+modifier key for the mac cmd/option key be?</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_0f591">
+<h4>
+<span class="author" title="darran"><span class="name">darran</span><span class="icon default"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/user.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Apr 5, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>Cheers Seán, good to hear.  The cmd/option key is the GUI modifier key.</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_a4a96">
+<h4>
+<span class="author" title="Advancer (unauthenticated)"><span class="name">Advancer (unauthenticated)</span><span class="icon"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/unauthenticated.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Oct 15, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>Hi darran,</p><p>I'm a
+little confused. Are we supposed to be able to upload sketches after we
+flash the arduino keyboard hex file? I thought we were but I've been
+having to flash the arduino serial usb hex, then upload a sketch then
+reflash the keyboard hex...</p><p>Thanks</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_30da9">
+<h4>
+<span class="author" title="darran"><span class="name">darran</span><span class="icon default"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/user.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Oct 23, 2011</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>Hi Advancer,</p><p>yes you
+have to flash back the serial hex whenever you want to load a new
+sketch.  There's not enough space in the 8u2 to combine both the HID
+functionality and the serial functionality into a single hex file, and
+the Arduino needs the serial interface to load sketches.</p><p>Cheers,<br>Darran.</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+<div class="comment" id="comment_users_darran_discussion_faf5e_7d0c2">
+<h4>
+<span class="author" title="skm (unauthenticated)"><span class="name">skm (unauthenticated)</span><span class="icon"><img alt="" width="36" height="36" src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/unauthenticated.png"><span class="mask"></span></span></span><div class="extras"><span class="datetime">Feb 28, 2012</span></div>
+</h4>
+<div class="commentbody">
+<div class="start startcommentbody"><span></span></div>
+<div class="contents contentscommentbody"><p>I'm a little confused by some of the terms used.<br>Is this a keyboard to be attached to an arduino Uno? to add keyboard input to the Uno?<br>or
+ is this using the Uno as the controller of the keys themselves, and the
+ usb of the Uno is then attached to a computer?  I didn't see anything
+about the keyboard matrix...</p><p>I'm wanting to build my own keyboard
+from scratch and looking for code to use a Mega or Mega32 as a
+replacement controller inside the keyboard.</p><p>Also, some early
+keyboards on lisp machines had 5 modifier keys: shift, alt, control,
+super, hyper.  How hard would it be to have 5 modifier keys?   If the
+status of modifiers must be contained in 1 byte, could you substitute a
+hyper key for one of the left/right alt keys for example?</p><p>Another
+question:  some keys on a keyboard have an auto-repeat ability, such as
+any alpha key.  Other keys do not have an auto-repeat, such as the shift
+ key.  Other keys function as a toggle and do not have an auto-repeat,
+such as caps-lock.  If you add new keys (say &gt; 12 function keys) how
+do you setup which type key they will be?  Example: some extra keys
+could be used to implement a programmable keyboard to record and
+playback macros for example.</p><p>Thanks for your help!</p><p>skm</p></div>
+<div class="end endcommentbody"><span></span></div>
+</div>
+</div>
+</div>
+<div id="showcomments" class="showcomments" style="overflow: visible;"><a type="link" href="#" class="showcommentformlink" title="Add a new comment." role="button"><span class="icon"></span><span class="text">Add a new comment.</span></a></div></div>
+</div>
+<div class="column columnsecondary"><div id="content_extras_column"></div></div>
+<div class="endcolumns"></div>
+</div></div>
+</div>
+<div class="end endmain"><span></span></div>
+</div>
+<div class="footer" id="page_footer">
+<div class="start startfooter"><span></span></div>
+<div class="contents contentsfooter"><ul class="footerlinks">
+<li id="groups_users_button"><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/updates/">My Page</a></li>
+<li id="logout_button"><a href="#" onclick="javascript:void(0)"><span class="label">Log In</span><span class="username"></span></a></li>
+<li id="help_button"><a href="https://web.archive.org/web/20120301033429/http://hunt.net.nz/wikihelp/" id="wikihelp" target="wikihelp">Help</a></li>
+</ul></div>
+<div class="end endfooter"><span></span></div>
+</div>
+</div>
+<div class="end endbody"><span></span></div>
+</div>
+</div>
+<script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/compressed_libraries.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/locStrings.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/compressed_apple_libraries.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/compressed_wiki.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/search.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/weblog.js" type="text/javascript" charset="utf-8"></script><script src="Arduino%20UNO%20Keyboard%20HID%20part%202_files/grouphome.js" type="text/javascript" charset="utf-8"></script><script type="text/javascript" charset="utf-8">
+				setTimeout(function() {server().url = "/RPC2"; if(window.prepare)prepare()}, 10);
+				var wikihelp = document.getElementById('wikihelp');
+				if(wikihelp) wikihelp.setAttribute('target','wikihelp');
+			</script>
+
+
+
+<div class="bvr-tagdraghandle" style="position:absolute;top:0;left:0;z-index:100;display:none;fontSize:0.8em;background:#dedede">-</div><table class="search_field_results" style="display:none"><tbody></tbody></table><ul class="popup toolbarpopup" style="display:none"><li><a class="popuplink" title="" href="javascript:void(0);"><span class="p">Paragraph</span></a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="blockquote">Block Quote</span></a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="pre">Monospace</span></a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="h1">Header 1</span></a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="h2">Header 2</span></a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="h3">Header 3</span></a></li></ul><ul class="popup toolbarpopup" style="display:none"><li><a class="popuplink" title="" href="javascript:void(0);" id="lists_popup_insertunorderedlist"><span class="titleWithPrefix"><span class="prefix">•</span><span class="title">Bullets</span></span></a></li><li><a class="popuplink" title="" href="javascript:void(0);" id="lists_popup_insertorderedlist"><span class="titleWithPrefix"><span class="prefix">1.</span><span class="title">Ordered</span></span></a></li><li class="popupDivider">&nbsp;</li><li><a class="popuplink" title="" href="javascript:void(0);" id="lists_popup_outdent"><span class="titleWithPrefix"><span class="prefix">&lt;</span><span class="title">Outdent List</span></span></a></li><li><a class="popuplink" title="" href="javascript:void(0);" id="lists_popup_indent"><span class="titleWithPrefix"><span class="prefix">&gt;</span><span class="title">Indent List</span></span></a></li></ul><ul class="popup toolbarpopup" style="display: none;"><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_color_none">T</span> </span>Plain</a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_bold">T</span> </span>Bold</a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_italic">T</span> </span>Italic</a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_underline">T</span> </span>Underline</a></li><li class="popupDivider">&nbsp;</li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_forecolor_important">T</span> </span>Important</a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_forecolor_emphasis">T</span> </span>Emphasis</a></li><li><a class="popuplink" title="" href="javascript:void(0);"><span class="forecolor_example_container"><span class="forecolor_example custom_backcolor_highlight">T</span> </span>Highlight</a></li></ul></body></html>
+<!--
+     FILE ARCHIVED ON 03:34:29 Mar 01, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:16:08 Aug 26, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.776
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.015
+  esindex: 0.011
+  cdx.remote: 31.993
+  LoadShardBlock: 3193.872 (3)
+  PetaboxLoader3.datanode: 240.253 (4)
+  PetaboxLoader3.resolve: 3230.54 (2)
+  load_resource: 401.719
+-->
