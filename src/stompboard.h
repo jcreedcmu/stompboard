@@ -1,6 +1,6 @@
 // Debugging mode assumes standard arduino firmware so that serial
 // writes end up on (for me on my machine) /dev/ttyACM0.
-#define DEBUG 1
+#define DEBUG 0
 
 // Taken from pp90-91 of https://usb.org/sites/default/files/hut1_5.pdf
 #define KEY_SPACE 0x2c // Keyboard Space Bar
@@ -17,8 +17,8 @@
 
 uint8_t scanCodes[3] = { KEY_LEFT, KEY_SPACE, KEY_RIGHT };
 
-uint8_t keyNone[8] = { 0, 0, 0, 0, 0, 0, 0 };
-uint8_t keyBuf[8] = { 0, 0, 0, 0, 0, 0, 0 };
+uint8_t keyNone[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t keyBuf[8] = { 0, 0, KEY_SPACE, 0, 0, 0, 0, 0 };
 
 int switch0 = 5;
 int switch1 = 4;
@@ -41,9 +41,9 @@ int ledVal = HIGH;
 
 // index should be 0, 1, or 2.
 void handleSwitch(int index) {
-#ifdef DEBUG
   ledVal = !ledVal;
   digitalWrite(onboardLedPin, ledVal);
+#if DEBUG
   char buf[64];
   snprintf(buf, 63, "switch %d\n", index);
   Serial.write(buf, strlen(buf));
